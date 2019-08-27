@@ -1,0 +1,50 @@
+nav {
+    background: #4E4E4E;
+}
+
+nav a {
+    margin-left: 45px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    color: white;
+
+}
+
+.nav--links {
+    display: none;
+}
+
+.nav-container > a:first-of-type {
+    margin: 0;
+    font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+
+    .nav--links{
+        display: block;
+    }
+    .nav--toggler{
+        display: none;
+    }
+    .nav--links li{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .btn:hover {
+        background: white;
+        color: black;
+        transition-duration: 1s;
+    }
+}

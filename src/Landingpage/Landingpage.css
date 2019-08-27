@@ -1,0 +1,39 @@
+#landingpage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/nav-fota.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.landingpage-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .15);
+}
+
+.landingpage-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.landingpage-text {
+    line-height: 42px
+}
+
+.landingpage-text h1, h2 {
+    margin-bottom: 50px;
+    color: white;
+}
+@media screen and (min-width: 768px) {
+    .landingpage-shadow {
+        height: 100%;
+    }
+    .landingpage-text {
+        width: 60%;
+    }
+}
