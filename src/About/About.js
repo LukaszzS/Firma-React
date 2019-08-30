@@ -1,42 +1,38 @@
 import React from 'react';
 import './About.css';
+import emp1 from '../img/foto1.jpg';
+import emp2 from '../img/about-foto2.jpg';
+import emp3 from '../img/about-foto1.jpg';
+import Employee from './Employee/Employee';
 
 class About extends React.Component{
 constructor(props) {
     super(props);
-    console.log(props);
 
+    this.employees = [
+        {
+          name: "Grzegorz Wąs",
+          pic: emp1  
+        },
+        {
+            name: "Zygfryda Paździerz",
+            pic: emp2
+        },
+        {
+            name: "Wanda Nierusz",
+            pic: emp3
+        }
+
+    ]
 }
-
-
 render () {
     return (
         <section id="about">
             <div className="container">
                  <h1>Nasi specjaliści</h1>
-                    <div className="about-person">
-                    <div className="about-foto first"></div>
-                        <h2>
-                        <span>Imię Nazwisko [ dział ]</span>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do
-                        b eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                         nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-                         </h2>
-                     </div>
-                 <div className="about-person">
-                     <div className="about-foto second"></div>
-                         <h2>
-                             <span>Imię Nazwisko [ dział ]</span>Lorem ipsum dolor sit amet, consectetur adipisicing
-                         elit, sed do
-                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                         nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-                        </h2>
-                </div>
-
+                  {this.employees.map((emp, i) => {
+                    return <Employee employee={emp} key={i}></Employee>
+                  })}
             </div>
         </section>
         );

@@ -6,7 +6,6 @@ import Landingpage from './Landingpage/Landingpage';
 import About from './About/About';
 import Offer from './Offer/Offer';
 import Footer from './Footer/Footer';
-
 function App() {
   return (
     <>

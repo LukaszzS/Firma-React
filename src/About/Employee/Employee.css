@@ -1,20 +1,8 @@
-#about {
-    padding: 40px 0;
-    width: 100%;
-    height: auto;
-    background: #F1F1F1;
-}
-img{
-    border-radius: 50%;
-    width: 200px;
-    flex-shrink: 0;
-}
-
 #about span {
     font-weight: bold;
     line-height: 3;
 }
-/*
+
 #about h1 {
     margin-bottom: 30px;
     text-align: center;
@@ -45,22 +33,23 @@ img{
 
 .about-person .first {
     flex-shrink: 0;
-    background-image: url("../img/about-foto1.jpg");
+    background-image: url("/src/img/about-foto1.jpg");
     /* background-image: url("../img/about-foto1.jpg"); */
-/* } */
+}
 
-/* .about-person:nth-child(odd) {
+.about-person:nth-child(odd) {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* 
 .about-person .second {
     flex-shrink: 0;
-    background-image: url("../img/about-foto2.jpg");
+    background-image: url("/src/img/about-foto1.jpg"); */
+
     /* background-image: url("../img/about-foto2.jpg"); */
 /* } */
-/* 
+
 @media screen and (min-width: 768px) {
     #about h1 {
         text-align: unset;
@@ -99,4 +88,4 @@ img{
             padding-bottom: 22%;
         }
     }
-} */
+}
