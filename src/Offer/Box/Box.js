@@ -7,14 +7,19 @@ constructor(props) {
     console.log(props);
 
 }
-
-
+displayNewText(){
+    if (this.props.box.isNew) return <span>(nowość)</span>
+}
+displayNewDot(){
+    if (this.props.box.isNew) return <div className="box-dot"></div>
+}
 render () {
     return (
             <div className="box-new">
-                <div className="box-content">
-                    Usługa 1 <span>(nowość)</span>
+                <div className="box-content">{this.props.box.name}
+                {this.displayNewText()}
                 </div>
+                {this.displayNewDot()}
             </div>
         );
     }
