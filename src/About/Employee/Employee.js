@@ -14,13 +14,14 @@ render () {
             {/* <div className="about-foto first"></div> */}
             <img src= {this.props.employee.pic} alt="Employee foto"></img>
              <h2>
-             <span>{this.props.employee.name} [ dział ]
-                </span>Lorem ipsum dolor sit amet, consectetur adipisicing
+             <span>{this.props.employee.name }
+             [ dział ]</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit, sed do
                 b eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
              </h2>
         </div>
     );

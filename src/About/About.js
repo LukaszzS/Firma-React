@@ -11,15 +11,15 @@ constructor(props) {
 
     this.employees = [
         {
-          name: "Grzegorz Wąs",
-          pic: emp1  
+          name: "Grzegorz Wąs ",
+          pic: emp1
         },
         {
-            name: "Zygfryda Paździerz",
+            name: "Zygfryda Paździerz ",
             pic: emp2
         },
         {
-            name: "Wanda Nierusz",
+            name: "Wanda Nierusz ",
             pic: emp3
         }
 

@@ -7,8 +7,7 @@ import About from './About/About';
 import Offer from './Offer/Offer';
 import Footer from './Footer/Footer';
 
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/fontawesome-free-solid'
+
 
 function App() {
   return (
