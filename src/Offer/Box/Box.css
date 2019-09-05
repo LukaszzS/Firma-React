@@ -49,7 +49,7 @@
     font-size: 18px;
 }
 
-.box-new:before {
+.box-dot {
     content: "";
     position: absolute;
     width: 22px;

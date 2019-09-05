@@ -49,6 +49,11 @@ footer a:last-of-type {
 
     .social-container {
         margin: 0 45px 15px 0;
+        display: flex;
+        justify-content: space-around;
+        width: 6%;
+        font-size: 24px;
+        cursor: pointer;
     }
 }
 
@@ -77,4 +82,5 @@ footer a:last-of-type {
         transition-duration: 0.5s;
         color: #4267B2;
     }
+
 }

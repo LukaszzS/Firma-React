@@ -11,7 +11,8 @@ displayNewText(){
     if (this.props.box.isNew) return <span>(nowość)</span>
 }
 displayNewDot(){
-    if (this.props.box.isNew) return <div className="box-dot"></div>
+    console.log(this.props.box);
+if (this.props.box.isNew) { return <div className="box-dot"></div> }
 }
 render () {
     return (
